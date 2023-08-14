@@ -1,15 +1,20 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 
 .body-container {
     display:flex;
     border: 1px solid black;
     flex-direction:column; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar-container {
     display:flex; 
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black; 
     background-color: #1f2937; 
 }
 
@@ -20,13 +25,16 @@
 
 }
 
-.info-container, .navbar-container {
+.info-container, .navbar-container, .hero-container {
     padding-left: 250px;
     padding-right: 250px; 
 }
 
+
 .navbar-logo {
     font-size: 24px;
+    font-weight: 900;
+    color: white; 
 }
 
 ul {
@@ -36,7 +44,7 @@ ul {
 
 li {
     list-style-type: none;
-    font-size: 24px; 
+    font-size: 18px;
 }
 
 a:link {
@@ -44,10 +52,6 @@ a:link {
 }
 
 a:visited, a:active {
-    color: #357fd4; 
-}
-
-a:active {
     color: white; 
 }
 
@@ -64,15 +68,21 @@ a:active {
 }
 
 .hero-container {
-    border: 1px solid black; 
-    display: flex; 
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: white;
+    text-align: center;
 
 }
 
-.hero1, .hero2, .hero3, .hero4 {
-    border: 1px solid black; 
+.hero-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 5px solid #357fd4;
+    border-radius: 10px;
+    padding-bottom: 50px;
 }
 
 .text-container {
@@ -83,12 +93,18 @@ a:active {
     font-size: 48px; 
 }
 
-
+.image-container, .hero-container{
+    margin-bottom: 30px;
+    margin-top: 30px; 
+}
 
 #ramsey {
-    
     width: 100%; 
     height: 100%;   
+}
+
+.header-text-2 {
+    margin-bottom: 30px;
 }
 
 
