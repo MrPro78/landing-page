@@ -1,3 +1,4 @@
+
 .body-container {
     display:flex;
     border: 1px solid black;
@@ -6,10 +7,22 @@
 
 .navbar-container {
     display:flex; 
-    justify-content: space-around; 
+    justify-content: space-between;
     align-items: center;
     border: 1px solid black; 
     background-color: #1f2937; 
+}
+
+.info-container {
+    background-color:#1f2937; 
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info-container, .navbar-container {
+    padding-left: 250px;
+    padding-right: 250px; 
 }
 
 .navbar-logo {
@@ -18,10 +31,10 @@
 
 ul {
     display: flex; 
+    gap: 10px;
 }
 
 li {
-    padding: 10px; 
     list-style-type: none;
     font-size: 24px; 
 }
@@ -63,13 +76,20 @@ a:active {
 }
 
 .text-container {
-    color: white;
+    color: #f9faf8;
 }
 
-.info-container {
-    background-color:#1f2937; 
+.header-text {
+    font-size: 48px; 
 }
+
+
 
 #ramsey {
-    width: 200px;
+    
+    width: 100%; 
+    height: 100%;   
 }
+
+
+
