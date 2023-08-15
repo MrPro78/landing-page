@@ -5,6 +5,7 @@ body {
 }
 
 
+
 .body-container {
     display:flex;
     border: 1px solid black;
@@ -26,7 +27,7 @@ body {
 
 }
 
-.info-container, .navbar-container, .hero-container {
+.info-container, .navbar-container, .hero-container, .content-container {
     padding-left: 250px;
     padding-right: 250px; 
 }
@@ -68,6 +69,9 @@ a:visited, a:active {
     font-weight: 900; 
 }
 
+/* HERO CONTAINERS SECTION */ 
+
+/*Flexed the overarching container to support a flex-direction of column based on webpage reference*/
 .hero-container {
     background-color: white;
     display: flex;
@@ -77,6 +81,9 @@ a:visited, a:active {
 
 }
 
+/* overarching container for boxed divs and their content */
+/* flex-wrap is used to ensure that each box div is wrapped a line below when resized */
+
 .hero-boxes {
     display: flex;
     gap: 20px;
@@ -85,13 +92,10 @@ a:visited, a:active {
     align-items: center;
 }
 
-.box-image {
-    border: 5px solid #357fd4;
-    border-radius: 10px;
-    height: 160px;
-    width: 160px;
-}
 
+/* Declared flex-direction column again so that the text contents can be displaced under their relative box*/
+/* A width is declared and shares the same measurement as the box-image container so that their alignment is in-line,
+in this case its 160px because the width of the image container is  */
 .box {
     font-size: 18px;
     display: flex;
@@ -99,6 +103,17 @@ a:visited, a:active {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    width: 160px;
+    text-align: center;
+}
+
+
+/* Declared visual and size properties for the individual box containers */
+/* */
+.box-image {
+    border: 5px solid #357fd4;
+    border-radius: 10px;
+    height: 160px;
     width: 160px;
 }
 
@@ -125,8 +140,21 @@ a:visited, a:active {
     margin-bottom: 30px;
 }
 
+
 .content-container {
-    display: flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    background-color: #e5e7eb;  
+    font-style:italic;
+    font-size: 36px; 
+}
+
+#Thor {
+    font-weight: 900;
+    font-size: 20px; 
 }
 
 .quote-container {
