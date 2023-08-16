@@ -1,7 +1,6 @@
 body {
     padding: 0;
     margin: 0;
-    display: flex; 
 }
 
 
@@ -26,6 +25,7 @@ body {
     display: flex;
     gap: 35px;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -171,6 +171,8 @@ in this case its 160px because the width of the image container is  */
 
 .quote-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-container {
